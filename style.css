@@ -10,6 +10,9 @@
     font-size: 48px;
     font-weight: bold;
   }
+  b{
+    font-weight: bold;
+  }
   .conteiner {
     width: 1200px;
     margin-left: auto;
@@ -220,30 +223,31 @@
   }
   .device-pic{
     position: relative;
-    background: #cadbed;
+    background: #cadbed no-repeat center;
     width: 100%;
     height: 180px;
   }
   .monitor{
-    background: #cadbed url("images/monitor.png") no-repeat 50% 50%;
+    /*background: #cadbed url("images/monitor.png") no-repeat 50% 50%;*/
+    background-image: url("images/monitor.png"); 
   }
   .tuner{
-    background: #cadbed url("images/tuner.png") no-repeat 50% 50%;
+    background-image: url("images/tuner.png");
   }
   .watch{
-    background: #cadbed url("images/watch.png") no-repeat 50% 50%;
+    background-image: url("images/watch.png");
   }
   .laptop{
-    background: #cadbed url("images/laptop.png") no-repeat 50% 50%;
+    background-image: url("images/laptop.png");
   }
   .ipod{
-    background: #cadbed url("images/ipod.png") no-repeat 50% 50%;
+    background-image: url("images/ipod.png");
   }
   .smart{
-    background: #cadbed url("images/smartphone.png") no-repeat 50% 50%;
+    background-image: url("images/smartphone.png");
   }
   .tablet{
-    background: #cadbed url("images/tablet.png") no-repeat 50% 50%;
+    background-image: url("images/tablet.png");
   }
   .zoom-btn{
     position: absolute;
@@ -252,10 +256,13 @@
     width: 30px;
     height: 30px;
     border: 1px solid #2c71b8;
-    background: url("images/zoom-blue.png") no-repeat 50% 50%;
+    background: url("images/zoom-blue.png") no-repeat center;
   }
   .zoom-active{
-    background: #2c71b8 url("images/zoom-white.png") no-repeat 50% 50%;
+    background: #2c71b8 url("images/zoom-white.png") no-repeat center;
+  }
+  .zoom-btn:hover{
+    background: #2c71b8 url("images/zoom-white.png") no-repeat center;
   }
   .fav-btn{
     position: absolute;
@@ -265,24 +272,71 @@
     height: 30px;
     border: 1px solid #2c71b8;
     margin-top: 10px;
-    background: url("images/fav-blue.png") no-repeat 50% 50%;
+    background: url("images/fav-blue.png") no-repeat center;
   }
   .fav-active{
-    background: #2c71b8 url("images/fav-white.png") no-repeat 50% 50%;
+    background: #2c71b8 url("images/fav-white.png") no-repeat center;
+  }
+  .fav-btn:hover{
+    background: #2c71b8 url("images/fav-white.png") no-repeat center;
   }
   .device-name{
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     color: white;
     font-size: 30px;
     font-weight: bold;
     border-top: 1px solid white;
   }
-
+  .description, .fitures{
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 21px;
+    color: white;
+    line-height: 1.2;
+  }
+  .fiture-item{
+    margin: 10px 0 5px;
+  }
+  .price{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 48px;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+  }
+  .btn-block{
+    width: 210px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .btn{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+  }
+  .btn:hover{
+    transform: scale(1.1);
+  }
+  .detales-btn{
+    border: 1px solid white;
+    background-color: #2c71b8;
+    text-align: center;
+  }
+  .cart-btn{
+    border: none;
+    background: rgb(255,255,255,0.2) url("images/cart-white.png") no-repeat 95% center;
+  }
   .load-more{
     text-align: center;
     color: white;
     font-size: 36px;
+    font-weight: bold;
     margin-top: 40px;
     margin-bottom: 90px;
   }
