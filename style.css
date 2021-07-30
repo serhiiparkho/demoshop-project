@@ -214,19 +214,16 @@
     font-weight: bold;
     margin-bottom: 25px;
   }
-  .fiture-block{
+  .check-box{
     position: relative;
     margin-bottom: 20px;
   }
-  .fiture-chk{
+  .label-text{
     position: absolute;
-    top: 3px;
-    float: left;
-  }
-  .fiture{
+    left: 25px;
+    top: -3px;
     color: white;
     font-size: 21px;
-    padding-left: 22px;
   }
   .more-ops{
     color: white;
